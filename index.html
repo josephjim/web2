@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootsrap=-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+    
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="navbar">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Compatibility</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <h1 class="logo">Pro<span>&#128772;Reg </span></h1>
+    </div>
+  </div>
+
+  <h1>&#128772;Register Your Product</h1>
+  <img src="images (12).jpeg" alt="Product Icon" class="product-icon">
+
+  <form action="/submit_product_registration" method="POST">
+    <fieldset>
+      <legend>&#128230; Product Details</legend>
+      
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" placeholder="Enter product name" required>
+
+      <label for="category">Product Category:</label>
+      <select id="category" name="category">
+        <option value="electronics">Electronics</option>
+        <option value="home">Home Appliances</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+
+      <label for="purchaseDate">Purchase Date:</label>
+      <input type="date" id="purchaseDate" name="purchaseDate">
+
+      <label for="serialNumber">Serial Number:</label>
+      <input type="text" id="serialNumber" name="serialNumber" placeholder="e.g., SN123456789">
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label>
+        <input type="checkbox" name="warrantyOptIn" value="yes"> Opt-in for extended warranty
+      </label>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional details..."></textarea>
+    </fieldset>
+
+    <div class="buttons">
+      <input type="submit" value="Register Product">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+  <table>
+    <caption>Product Compatibility</caption>
+    <thead>
+      <tr>
+        <th>Device Type</th>
+        <th>Operating System</th>
+        <th>Compatible Versions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Laptop</td>
+        <td>Windows</td>
+        <td>8 or higher</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>MacOS</td>
+        <td>Big SUr(11.7.10) or higher</td>
+      </tr>
+      <tr>
+        <td>Smartphone</td>
+        <td>Android</td>
+        <td>12, 13, 14</td>
+      </tr>
+      <tr>
+        <td>iPhone</td>
+        <td>iOS</td>
+        <td>15 or higher</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Data accurate as of May 24, 2025</td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="profile">
+    <img src="2.png" alt="A Photo of Joseph Jim" width="200" height="300">  
+<h1>Jim Joseph Onyedikachi <br>(24/15932) <br> Computer Science</h1>
+</div>
+</body>
+</html>
